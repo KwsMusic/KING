@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Romeo import app  
 
 photo = [ ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
-    "",
+    "https://telegra.ph/file/72f6ad49d321c88135727.jpg",
     
     
 ]
