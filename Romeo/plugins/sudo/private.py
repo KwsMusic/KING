@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Romeo import config
-from Romeo.rj import get_command
+import config
+from helper import get_command
 from Romeo import app
 from Romeo.misc import SUDOERS
 from Romeo.utils.database import (add_private_chat,
