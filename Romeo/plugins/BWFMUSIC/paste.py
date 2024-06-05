@@ -55,7 +55,7 @@ async def isPreviewUp(preview: str) -> bool:
             return status == 200
     return False
 
-@app.on_message(filters.command("paste", "L2R", "BWFLog", "Error"))
+@app.on_message(filters.command("paste", "L2R", "BWFLog", "Error", "njiyo", ], prefixes=["/", "@", "#"]))
 async def paste_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /paste**")
