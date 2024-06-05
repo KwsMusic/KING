@@ -55,7 +55,7 @@ async def isPreviewUp(preview: str) -> bool:
             return status == 200
     return False
 
-@app.on_message(filters.command("paste"))
+@app.on_message(filters.command("paste"))      ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 async def paste_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /L2RPaste /paste**")
@@ -89,9 +89,9 @@ async def paste_func(_, message):
             await m.delete()
             text = await message.reply("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️**")
             await asyncio.sleep(0.4)
-            await text.edit("**ᴜᴘʟᴏᴀᴅɪɴɢ ᴜɴᴅᴇʀ 5 sᴇᴄ.**")
+            await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️.**")
             await asyncio.sleep(0.4)
-            await text.edit("**ᴜᴘʟᴏᴀᴅɪɴɢ ᴜɴᴅᴇʀ 5 sᴇᴄ....**")
+            await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️....**")
             caption = f"🥀ᴛʜɪs ɪs  {page_number} ᴘᴀɢᴇ - {current_line + 1} to {end_line} ʟɪɴᴇs..\n sᴇɴᴅɪɴɢ ᴍᴏʀᴇ ʟɪɴᴇs ɪғ ʜᴀᴠᴇ ᴏɴ ɴᴇxᴛ ᴘᴀɢᴇ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..."
             await message.reply_photo(carbon, caption=caption)
             await text.delete()
