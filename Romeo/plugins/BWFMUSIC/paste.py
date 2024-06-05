@@ -18,7 +18,7 @@ async def make_carbon(code):
         async with session.post(url, json={"code": code}) as resp:
             image = BytesIO(await resp.read())
     image.name = "carbon.png"
-    return image  ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
+    return image   ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
     
 aiohttpsession = ClientSession()
 
@@ -34,12 +34,12 @@ def _netcat(host, port, content):
         if not data:
             break
         return data
-    s.close()  ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
+    s.close()                                 ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 
 async def paste(content):
     loop = get_running_loop()
     link = await loop.run_in_executor(None, partial(_netcat, "ezup.dev", 9999, content))
-    return link   ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
+    return link
 
 async def isPreviewUp(preview: str) -> bool:
     for _ in range(7):
@@ -55,12 +55,12 @@ async def isPreviewUp(preview: str) -> bool:
             return status == 200
     return False
 
-@app.on_message(filters.command("paste", "L2R", "BWFLog", "Error", "njiyo", ], prefixes=["/", "@", "#"]))
+@app.on_message(filters.command("paste"))
 async def paste_func(_, message):
     if not message.reply_to_message:
-        return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /paste**")
+        return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /L2RPaste /paste**")
 
-    m = await message.reply_text("**ᴘᴀsᴛɪɴɢ ᴘʟs ᴡᴀɪᴛ 10 sᴇᴄ....**")
+    m = await message.reply_text("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️....**")
 
     if message.reply_to_message.text:
         content = str(message.reply_to_message.text)
@@ -102,4 +102,4 @@ async def paste_func(_, message):
             await sleep(1)  # Optional: Add a sleep to avoid rate limiting or being blocked
 
     else:
-        await m.edit("**Unsupported file type. Only text files can be pasted.**")
+        await m.edit("**Unsupported file type. Only text files can be L2RPaste pasted.**")
