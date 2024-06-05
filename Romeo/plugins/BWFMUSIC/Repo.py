@@ -2,7 +2,6 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Romeo import app as bot
 import requests
-from config import BOT_USERNAME
 from Romeo.utils.errors import capture_err
 
 start_txt = """**
