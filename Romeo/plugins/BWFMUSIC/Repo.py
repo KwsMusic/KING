@@ -1,9 +1,9 @@
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Romeo import app as bot
+from AarohiX import app as bot
 import requests
-from config import aiohttp
-from Romeo.utils.errors import capture_err
+from config import BOT_USERNAME
+from AarohiX.utils.errors import capture_err
 
 start_txt = """**
 ➤ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ᴡᴏʀʟᴅ ᥫᩣ
@@ -21,7 +21,7 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/MENTALMUSICROBOT?startgroup=true")
+          InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
           InlineKeyboardButton("⛩️ʜᴇʟᴘ🦋", url="https://t.me/BWF_MUSIC1"),
