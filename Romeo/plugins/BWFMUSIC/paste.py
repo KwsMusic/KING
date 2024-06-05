@@ -18,7 +18,7 @@ async def make_carbon(code):
         async with session.post(url, json={"code": code}) as resp:
             image = BytesIO(await resp.read())
     image.name = "carbon.png"
-    return image
+    return image  ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
     
 aiohttpsession = ClientSession()
 
@@ -34,12 +34,12 @@ def _netcat(host, port, content):
         if not data:
             break
         return data
-    s.close()
+    s.close()  ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 
 async def paste(content):
     loop = get_running_loop()
     link = await loop.run_in_executor(None, partial(_netcat, "ezup.dev", 9999, content))
-    return link
+    return link   ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 
 async def isPreviewUp(preview: str) -> bool:
     for _ in range(7):
