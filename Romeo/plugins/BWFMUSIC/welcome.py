@@ -5,22 +5,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Romeo import app  
 
-photo = [
-    "https://i.postimg.cc/g0j4wY4H/20231127-214133.png",
-    "https://telegra.ph/file/0c87c715c94cee2322a4b.jpg",
-    "https://i.postimg.cc/gjb3zdns/20231127-215452.png",
-    "https://telegra.ph/file/7a6b51ee0077724254ca7.jpg",
-    "https://telegra.ph/file/c3ad58ec96bdce6969512.jpg",
-    "https://i.postimg.cc/g0j4wY4H/20231127-214133.png",
-    "https://telegra.ph/file/2b5b66c9a0989afa0779a.jpg",
-    "https://telegra.ph/file/4500be253b16522c8d8f1.jpg",
-    "https://i.postimg.cc/gjb3zdns/20231127-215452.png",
-    "https://telegra.ph/file/8ca939f4bb175f9ad1791.jpg",
-    "https://telegra.ph/file/ecefaa3e00fb911826673.jpg",
-    "https://i.postimg.cc/g0j4wY4H/20231127-214133.png",
-    "https://telegra.ph/file/1eb67c100ff8029ae585a.jpg",
-    "https://telegra.ph/file/0c87c715c94cee2322a4b.jpg",
-    "https://i.postimg.cc/gjb3zdns/20231127-215452.png",
+photo = [ 
+    "",
+    
     
 ]
 
