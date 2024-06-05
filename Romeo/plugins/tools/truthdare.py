@@ -5,12 +5,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from helper import get_command
-from Romeo import app
-from Romeo.core.call import rj
-from Romeo.utils import bot_sys_stats
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.utils import bot_sys_stats
+from BWFMUSIC.utils.decorators.language import language
 import random
-from Romeo.data import DE, DH, TE, TH 
+from BWFMUSIC.data import DE, DH, TE, TH 
 
 
 @app.on_message(

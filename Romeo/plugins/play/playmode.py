@@ -3,11 +3,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.utils.database import (get_playmode, get_playtype,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from Romeo.utils.decorators import language
-from Romeo.utils.inline.settings import playmode_users_markup
+from BWFMUSIC.utils.decorators import language
+from BWFMUSIC.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")

@@ -3,11 +3,11 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.core.call import rj
-from Romeo.utils.database import is_music_playing, music_off
-from Romeo.utils.decorators import AdminRightsCheck
-from Romeo.utils.inline.play import close_keyboard
+from BWFMUSIC import app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.utils.database import is_music_playing, music_off
+from BWFMUSIC.utils.decorators import AdminRightsCheck
+from BWFMUSIC.utils.inline.play import close_keyboard
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")

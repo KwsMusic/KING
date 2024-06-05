@@ -9,11 +9,11 @@ from youtubesearchpython.__future__ import VideosSearch
 import config
 from config import BANNED_USERS, OWNER_ID
 from helper import get_command, get_string
-from Romeo import Telegram, YouTube, app
-from Romeo.misc import SUDOERS, _boot_
-from Romeo.plugins.play.playlist import del_plist_msg
-from Romeo.plugins.sudo.sudoers import sudoers_list
-from Romeo.utils.database import (add_served_chat,
+from BWFMUSIC import Telegram, YouTube, app
+from BWFMUSIC.misc import SUDOERS, _boot_
+from BWFMUSIC.plugins.play.playlist import del_plist_msg
+from BWFMUSIC.plugins.sudo.sudoers import sudoers_list
+from BWFMUSIC.utils.database import (add_served_chat,
                                        add_served_user,
                                        get_served_chats,
                                        get_served_users,
@@ -21,9 +21,9 @@ from Romeo.utils.database import (add_served_chat,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from Romeo.utils.decorators.language import LanguageStart
-from Romeo.utils.formatters import get_readable_time
-from Romeo.utils.inline import (help_pannel, private_panel,
+from BWFMUSIC.utils.decorators.language import LanguageStart
+from BWFMUSIC.utils.formatters import get_readable_time
+from BWFMUSIC.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()

@@ -1,7 +1,7 @@
 from typing import Union
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Romeo import app
+from BWFMUSIC import app
 
 def help_pannel(_, START: Union[bool, int] = None):
     first = [
@@ -13,11 +13,11 @@ def help_pannel(_, START: Union[bool, int] = None):
         InlineKeyboardButton(
             # text=_["BACK_BUTTON"],
             text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬",
-            url=f"https://t.me/RomeoBot_op",
+            url=f"https://t.me/BWFMUSICBot_op",
         ),
         InlineKeyboardButton(
             text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-            url=f"t.me/Romeo_op",
+            url=f"t.me/BWFMUSIC_op",
         ),
         InlineKeyboardButton(
             text="𝐂𝐥𝐨𝐬𝐞", callback_data=f"close"

@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from helper import get_command, get_string
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (get_lang, is_maintenance,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from Romeo.utils.decorators.language import language
+from BWFMUSIC.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")

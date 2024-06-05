@@ -3,12 +3,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (blacklist_chat,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from Romeo.utils.decorators.language import language
+from BWFMUSIC.utils.decorators.language import language
 
 # Commands
 

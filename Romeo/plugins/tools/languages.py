@@ -4,9 +4,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from helper import get_command, get_string
-from Romeo import app
-from Romeo.utils.database import get_lang, set_lang
-from Romeo.utils.decorators import (ActualAdminCB, language,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import get_lang, set_lang
+from BWFMUSIC.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available

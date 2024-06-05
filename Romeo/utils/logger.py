@@ -1,6 +1,6 @@
 from config import LOG, LOG_GROUP_ID, MUSIC_BOT_NAME
-from Romeo import app
-from Romeo.utils.database import is_on_off
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):

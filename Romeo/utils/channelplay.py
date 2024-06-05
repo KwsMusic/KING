@@ -1,5 +1,5 @@
-from Romeo import app
-from Romeo.utils.database import get_cmode
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):

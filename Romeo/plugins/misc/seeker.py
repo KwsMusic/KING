@@ -1,7 +1,7 @@
 import asyncio
 
-from Romeo.misc import db
-from Romeo.utils.database import get_active_chats, is_music_playing
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():

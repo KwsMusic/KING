@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from Romeo.core.mongo import mongodb
+from BWFMUSIC.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats

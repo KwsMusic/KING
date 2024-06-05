@@ -9,9 +9,9 @@ from pyrogram.types import (InlineKeyboardButton,
 
 import config
 from config import MUSIC_BOT_NAME, lyrical
-from Romeo import app
+from BWFMUSIC import app
 
-from Romeo.utils.formatters import (convert_bytes, get_readable_time,
+from BWFMUSIC.utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
 
 downloader = {}

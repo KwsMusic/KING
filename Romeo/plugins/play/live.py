@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from Romeo import YouTube, app
-from Romeo.utils.channelplay import get_channeplayCB
-from Romeo.utils.decorators.language import languageCB
-from Romeo.utils.stream.stream import stream
+from BWFMUSIC import YouTube, app
+from BWFMUSIC.utils.channelplay import get_channeplayCB
+from BWFMUSIC.utils.decorators.language import languageCB
+from BWFMUSIC.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)

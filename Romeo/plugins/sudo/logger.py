@@ -2,10 +2,10 @@ from pyrogram import filters
 
 import config
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import add_off, add_on
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import add_off, add_on
+from BWFMUSIC.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")

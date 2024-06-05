@@ -4,14 +4,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from Romeo import app
-from Romeo.utils.database import (get_global_tops,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from Romeo.utils.decorators.language import languageCB
-from Romeo.utils.inline.playlist import (botplaylist_markup,
+from BWFMUSIC.utils.decorators.language import languageCB
+from BWFMUSIC.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from Romeo.utils.stream.stream import stream
+from BWFMUSIC.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 

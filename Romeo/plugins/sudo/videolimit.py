@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import set_video_limit
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import set_video_limit
+from BWFMUSIC.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 

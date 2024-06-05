@@ -6,8 +6,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
 from helper import get_command
-from Romeo import app
-from Romeo.utils.database import (add_nonadmin_chat,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -22,13 +22,13 @@ from Romeo.utils.database import (add_nonadmin_chat,
                                        save_audio_bitrate,
                                        save_video_bitrate,
                                        set_playmode, set_playtype)
-from Romeo.utils.decorators.admins import ActualAdminCB
-from Romeo.utils.decorators.language import language, languageCB
-from Romeo.utils.inline.settings import (
+from BWFMUSIC.utils.decorators.admins import ActualAdminCB
+from BWFMUSIC.utils.decorators.language import language, languageCB
+from BWFMUSIC.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from Romeo.utils.inline.start import private_panel
+from BWFMUSIC.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")

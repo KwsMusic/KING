@@ -4,17 +4,17 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import YouTube, app
-from Romeo.core.call import rj
-from Romeo.misc import db
-from Romeo.utils.database import get_loop
-from Romeo.utils.decorators import AdminRightsCheck
-from Romeo.utils.romeomusic.rj import command
-from Romeo.utils.inline.play import (stream_markup,
+from BWFMUSIC import YouTube, app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.database import get_loop
+from BWFMUSIC.utils.decorators import AdminRightsCheck
+from BWFMUSIC.utils.BWFMUSICmusic.rj import command
+from BWFMUSIC.utils.inline.play import (stream_markup,
                                           telegram_markup,
                                           close_keyboard)
-from Romeo.utils.stream.autoclear import auto_clean
-from Romeo.utils.thumbnails import gen_thumb
+from BWFMUSIC.utils.stream.autoclear import auto_clean
+from BWFMUSIC.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")

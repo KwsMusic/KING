@@ -1,9 +1,9 @@
-from Romeo.core.bot import RomeoBot
-from Romeo.core.dir import dirr
-from Romeo.core.git import git
-from Romeo.core.userbot import Userbot
-from Romeo.misc import dbb, heroku
-from Romeo.logging import LOGGER
+from BWFMUSIC.core.bot import BWFMUSICBot
+from BWFMUSIC.core.dir import dirr
+from BWFMUSIC.core.git import git
+from BWFMUSIC.core.userbot import Userbot
+from BWFMUSIC.misc import dbb, heroku
+from BWFMUSIC.logging import LOGGER
 
 git()
 
@@ -15,7 +15,7 @@ dbb()
 heroku()
 
 # Clients
-app = RomeoBot()
+app = BWFMUSICBot()
 
 userbot = Userbot()
 

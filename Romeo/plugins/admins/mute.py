@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from Romeo import app
-from Romeo.core.call import rj
-from Romeo.utils.database import is_muted, mute_on
-from Romeo.utils.decorators import AdminRightsCheck
+from BWFMUSIC import app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.utils.database import is_muted, mute_on
+from BWFMUSIC.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(

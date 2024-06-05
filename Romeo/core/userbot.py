@@ -4,7 +4,7 @@ from pyrogram import Client
 
 import config
 
-from Romeo.logging import LOGGER
+from BWFMUSIC.logging import LOGGER
 
 assistants = []
 assistantids = []
@@ -13,35 +13,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="RomeoMusic1",
+            name="BWFMUSICMusic1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="RomeoMusic2",
+            name="BWFMUSICMusic2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="RomeoMusic3",
+            name="BWFMUSICMusic3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="RomeoMusic4",
+            name="BWFMUSICMusic4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="RomeoMusic5",
+            name="BWFMUSICMusic5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),

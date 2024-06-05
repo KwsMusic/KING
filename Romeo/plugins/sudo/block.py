@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import add_gban_user, remove_gban_user
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import add_gban_user, remove_gban_user
+from BWFMUSIC.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")

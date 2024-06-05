@@ -8,9 +8,9 @@ from pyrogram.raw import types
 import config
 from config import adminlist, chatstats, clean, userstats
 from helper import get_command
-from Romeo import app, userbot
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (get_active_chats,
+from BWFMUSIC import app, userbot
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (get_active_chats,
                                        get_authuser_names, get_client,
                                        get_particular_top,
                                        get_served_chats,
@@ -18,8 +18,8 @@ from Romeo.utils.database import (get_active_chats,
                                        is_cleanmode_on, set_queries,
                                        update_particular_top,
                                        update_user_top)
-from Romeo.utils.decorators.language import language
-from Romeo.utils.formatters import alpha_to_int
+from BWFMUSIC.utils.decorators.language import language
+from BWFMUSIC.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -156,7 +156,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from Romeo.core.userbot import assistants
+        from BWFMUSIC.core.userbot import assistants
 
         for num in assistants:
             sent = 0

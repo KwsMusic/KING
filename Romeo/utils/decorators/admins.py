@@ -2,9 +2,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from helper import get_string
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (get_authuser_names, get_cmode,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (get_authuser_names, get_cmode,
                                        get_lang, is_active_chat,
                                        is_commanddelete_on,
                                        is_maintenance,

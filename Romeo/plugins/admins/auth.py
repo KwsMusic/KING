@@ -3,12 +3,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from helper import get_command
-from Romeo import app
-from Romeo.utils.database import (delete_authuser, get_authuser,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from Romeo.utils.decorators import AdminActual
-from Romeo.utils.formatters import int_to_alpha
+from BWFMUSIC.utils.decorators import AdminActual
+from BWFMUSIC.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")

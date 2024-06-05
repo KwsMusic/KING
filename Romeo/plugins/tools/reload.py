@@ -6,13 +6,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from helper import get_command
-from Romeo import app
-from Romeo.core.call import rj
-from Romeo.misc import db
-from Romeo.utils.database import get_authuser_names, get_cmode
-from Romeo.utils.decorators import (ActualAdminCB, AdminActual,
+from BWFMUSIC import app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.database import get_authuser_names, get_cmode
+from BWFMUSIC.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from Romeo.utils.formatters import alpha_to_int
+from BWFMUSIC.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")

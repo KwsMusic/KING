@@ -7,16 +7,16 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils import get_readable_time
-from Romeo.utils.database import (add_banned_user,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils import get_readable_time
+from BWFMUSIC.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from Romeo.utils.decorators.language import language
+from BWFMUSIC.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")

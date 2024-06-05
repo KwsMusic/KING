@@ -22,9 +22,9 @@ from pytgcalls.types import (
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from Romeo import LOGGER, YouTube, app
-from Romeo.misc import db
-from Romeo.utils.database import (
+from BWFMUSIC import LOGGER, YouTube, app
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -36,11 +36,11 @@ from Romeo.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from Romeo.utils.exceptions import AssistantErr
-from Romeo.utils.formatters import check_duration, seconds_to_min, speed_converter
-from Romeo.utils.inline.play import stream_markup
-from Romeo.utils.stream.autoclear import auto_clean
-from Romeo.utils.thumbnails import gen_thumb
+from BWFMUSIC.utils.exceptions import AssistantErr
+from BWFMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from BWFMUSIC.utils.inline.play import stream_markup
+from BWFMUSIC.utils.stream.autoclear import auto_clean
+from BWFMUSIC.utils.thumbnails import gen_thumb
 from helper import get_string
 
 autoend = {}

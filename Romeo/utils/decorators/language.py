@@ -1,6 +1,6 @@
 from helper import get_string
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (get_lang, is_commanddelete_on,
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 

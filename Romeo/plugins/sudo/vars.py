@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database.memorydatabase import get_video_limit
-from Romeo.utils.formatters import convert_bytes
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database.memorydatabase import get_video_limit
+from BWFMUSIC.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

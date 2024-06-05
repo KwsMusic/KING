@@ -2,7 +2,7 @@ import os
 import sys
 from os import listdir, mkdir
 
-from Romeo.logging import LOGGER
+from BWFMUSIC.logging import LOGGER
 
 
 def dirr():

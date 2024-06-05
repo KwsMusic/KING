@@ -1,9 +1,9 @@
 {
-    "name": "Romeo",
+    "name": "BWFMUSIC",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "repository": "https://github.com/RRomeo-RJ/Romeo-musicBot",
+    "repository": "https://github.com/RBWFMUSIC-RJ/BWFMUSIC-musicBot",
     "logo": "https://telegra.ph/file/e745fdaf1966f228582dc.jpg",
-    "keywords": ["pyrogram", "Romeomusicbot", "pytgcall"],
+    "keywords": ["pyrogram", "BWFMUSICmusicbot", "pytgcall"],
     "stack": "container",
     "env": {
       "API_ID": {
@@ -68,12 +68,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Fill the link of your group..",
-        "value": "https://t.me/RomeoBot_OP",
+        "value": "https://t.me/BWFMUSICBot_OP",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Fill the link of channel.",
-        "value": "https://t.me/Romeo_OP",
+        "value": "https://t.me/BWFMUSIC_OP",
         "required": false
       }
 

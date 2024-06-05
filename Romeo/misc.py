@@ -5,9 +5,9 @@ import heroku3
 from pyrogram import filters
 
 import config
-from Romeo.core.mongo import mongodb
+from BWFMUSIC.core.mongo import mongodb
 
-from Romeo.logging import LOGGER
+from BWFMUSIC.logging import LOGGER
 
 SUDOERS = filters.user()
 

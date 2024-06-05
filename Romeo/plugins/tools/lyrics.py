@@ -9,8 +9,8 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, lyrical
 from helper import get_command
-from Romeo import app
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.utils.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")

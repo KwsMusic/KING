@@ -3,13 +3,13 @@ from pyrogram.types import Message
 
 import config
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import (add_private_chat,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import (add_private_chat,
                                        get_private_served_chats,
                                        is_served_private_chat,
                                        remove_private_chat)
-from Romeo.utils.decorators.language import language
+from BWFMUSIC.utils.decorators.language import language
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")

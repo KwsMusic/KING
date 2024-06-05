@@ -4,20 +4,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from Romeo import Carbon, YouTube, app
-from Romeo.core.call import rj
-from Romeo.misc import db
-from Romeo.utils.database import (add_active_chat,
+from BWFMUSIC import Carbon, YouTube, app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from Romeo.utils.exceptions import AssistantErr
-from Romeo.utils.inline.play import (stream_markup, queue_markup,
+from BWFMUSIC.utils.exceptions import AssistantErr
+from BWFMUSIC.utils.inline.play import (stream_markup, queue_markup,
                                           telegram_markup)
-from Romeo.utils.inline.playlist import close_markup
-from Romeo.utils.pastebin import Romeobin
-from Romeo.utils.stream.queue import put_queue, put_queue_index
-from Romeo.utils.thumbnails import gen_thumb
+from BWFMUSIC.utils.inline.playlist import close_markup
+from BWFMUSIC.utils.pastebin import BWFMUSICbin
+from BWFMUSIC.utils.stream.queue import put_queue, put_queue_index
+from BWFMUSIC.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -121,7 +121,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Romeobin(msg)
+            link = await BWFMUSICbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])

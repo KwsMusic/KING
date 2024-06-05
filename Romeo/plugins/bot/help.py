@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from helper import get_command, get_string, helpers
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils import help_pannel
-from Romeo.utils.database import get_lang, is_commanddelete_on
-from Romeo.utils.decorators.language import (LanguageStart,
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils import help_pannel
+from BWFMUSIC.utils.database import get_lang, is_commanddelete_on
+from BWFMUSIC.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from Romeo.utils.inline.help import (help_back_markup,
+from BWFMUSIC.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command

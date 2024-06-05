@@ -2,8 +2,8 @@ import asyncio
 import speedtest
 from pyrogram import filters
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")

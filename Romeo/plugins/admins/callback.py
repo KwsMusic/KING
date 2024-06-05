@@ -10,11 +10,11 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL,
                     MUSIC_BOT_NAME, adminlist)
-from Romeo import YouTube, app
-from Romeo.core.call import rj
-from Romeo.misc import SUDOERS, db
-from Romeo.utils import bot_sys_stats
-from Romeo.utils.database import (
+from BWFMUSIC import YouTube, app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.misc import SUDOERS, db
+from BWFMUSIC.utils import bot_sys_stats
+from BWFMUSIC.utils.database import (
     get_active_chats,
     get_lang,
     is_active_chat,
@@ -24,17 +24,17 @@ from Romeo.utils.database import (
     music_on,
     set_loop,
 )
-from Romeo.utils.decorators.language import languageCB
-from Romeo.utils.formatters import seconds_to_min
-from Romeo.utils.inline import (
+from BWFMUSIC.utils.decorators.language import languageCB
+from BWFMUSIC.utils.formatters import seconds_to_min
+from BWFMUSIC.utils.inline import (
     stream_markup,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
     close_keyboard,
 )
-from Romeo.utils.stream.autoclear import auto_clean
-from Romeo.utils.thumbnails import gen_thumb
+from BWFMUSIC.utils.stream.autoclear import auto_clean
+from BWFMUSIC.utils.thumbnails import gen_thumb
 
 wrong = {}
 checker = {}

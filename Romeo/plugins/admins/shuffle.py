@@ -4,9 +4,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.misc import db
-from Romeo.utils.decorators import AdminRightsCheck
+from BWFMUSIC import app
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")

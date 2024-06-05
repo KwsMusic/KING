@@ -3,7 +3,7 @@ import math
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
-from Romeo.utils.formatters import time_to_seconds
+from BWFMUSIC.utils.formatters import time_to_seconds
 
 ## After Edits with Timer Bar
 
@@ -11,24 +11,24 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    Romeo = math.floor(percentage)
-    if 0 < Romeo <= 10:
+    BWFMUSIC = math.floor(percentage)
+    if 0 < BWFMUSIC <= 10:
         bar = "•▁▄▂▇▄▅▄▅▃•"
-    elif 10 < Romeo < 20:
+    elif 10 < BWFMUSIC < 20:
         bar = "•▁▃▇▂▅▇▄▅▃•"
-    elif 20 <= Romeo < 30:
+    elif 20 <= BWFMUSIC < 30:
         bar = "•▃▁▇▂▅▃▄▃▅•"
-    elif 30 <= Romeo < 40:
+    elif 30 <= BWFMUSIC < 40:
         bar = "•▃▄▂▄▇▅▃▅▁•"
-    elif 40 <= Romeo < 50:
+    elif 40 <= BWFMUSIC < 50:
         bar = "•▁▃▄▂▇▃▄▅▃•"
-    elif 50 <= Romeo < 60:
+    elif 50 <= BWFMUSIC < 60:
         bar = "•▃▁▄▂▅▃▇▃▅•"
-    elif 60 <= Romeo < 70:
+    elif 60 <= BWFMUSIC < 70:
         bar = "•▁▇▄▂▅▄▅▃▄•"
-    elif 70 <= Romeo < 80:
+    elif 70 <= BWFMUSIC < 80:
         bar = "•▁▃▅▇▂▅▄▃▇•"
-    elif 80 <= Romeo < 95:
+    elif 80 <= BWFMUSIC < 95:
         bar = "•▅▄▇▂▅▂▄▇▁•"
     else:
         bar = "•▃▅▂▅▃▇▄▅▃•"
@@ -64,24 +64,24 @@ def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    Romeo = math.floor(percentage)
-    if 0 < Romeo <= 10:
+    BWFMUSIC = math.floor(percentage)
+    if 0 < BWFMUSIC <= 10:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 10 < Romeo < 20:
+    elif 10 < BWFMUSIC < 20:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 20 <= Romeo < 30:
+    elif 20 <= BWFMUSIC < 30:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 30 <= Romeo < 40:
+    elif 30 <= BWFMUSIC < 40:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 40 <= Romeo < 50:
+    elif 40 <= BWFMUSIC < 50:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 50 <= Romeo < 60:
+    elif 50 <= BWFMUSIC < 60:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 60 <= Romeo < 70:
+    elif 60 <= BWFMUSIC < 70:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 70 <= Romeo < 80:
+    elif 70 <= BWFMUSIC < 80:
         bar = "▇▇▇▇▇▇▇▇▇"
-    elif 80 <= Romeo < 95:
+    elif 80 <= BWFMUSIC < 95:
         bar = "▇▇▇▇▇▇▇▇▇"
     else:
         bar = "▇▇▇▇▇▇▇▇▇"

@@ -3,14 +3,14 @@ import config
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import BotCommand
-from Romeo.logging import LOGGER
+from BWFMUSIC.logging import LOGGER
 
 
-class RomeoBot(Client):
+class BWFMUSICBot(Client):
     def __init__(self):       
         LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            name="RomeoRJ",
+            name="BWFMUSICRJ",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -26,7 +26,7 @@ class RomeoBot(Client):
         self.username = get_me.username                
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "Romeo Started"
+                config.LOG_GROUP_ID, "BWFMUSIC Started"
             )
         except:
             LOGGER(__name__).error(

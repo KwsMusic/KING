@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.utils.database.memorydatabase import (get_loop,
+from BWFMUSIC import app
+from BWFMUSIC.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
-from Romeo.utils.decorators import AdminRightsCheck
+from BWFMUSIC.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")

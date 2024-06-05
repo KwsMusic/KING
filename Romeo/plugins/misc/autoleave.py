@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from Romeo import app
-from Romeo.core.call import rj, autoend
-from Romeo.utils.database import (get_client, is_active_chat,
+from BWFMUSIC import app
+from BWFMUSIC.core.call import rj, autoend
+from BWFMUSIC.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from Romeo.core.userbot import assistants
+            from BWFMUSIC.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)

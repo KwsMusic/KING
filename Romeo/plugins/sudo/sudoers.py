@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID, MUSIC_BOT_NAME
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database import add_sudo, remove_sudo
-from Romeo.utils.decorators.language import language
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database import add_sudo, remove_sudo
+from BWFMUSIC.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")

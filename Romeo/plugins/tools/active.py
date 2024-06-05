@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from helper import get_command
-from Romeo import app
-from Romeo.misc import SUDOERS
-from Romeo.utils.database.memorydatabase import (
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
+from BWFMUSIC.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands

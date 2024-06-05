@@ -3,11 +3,11 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import YouTube, app
-from Romeo.core.call import rj
-from Romeo.misc import db
-from Romeo.utils.romeomusic.rj import command
-from Romeo.utils import AdminRightsCheck, seconds_to_min
+from BWFMUSIC import YouTube, app
+from BWFMUSIC.core.call import rj
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils.BWFMUSICmusic.rj import command
+from BWFMUSIC.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")

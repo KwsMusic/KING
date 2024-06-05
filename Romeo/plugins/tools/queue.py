@@ -9,14 +9,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.misc import db
-from Romeo.utils import (Romeobin, get_channeplayCB,
+from BWFMUSIC import app
+from BWFMUSIC.misc import db
+from BWFMUSIC.utils import (BWFMUSICbin, get_channeplayCB,
                               seconds_to_min)
-from Romeo.utils.database import (get_cmode, is_active_chat,
+from BWFMUSIC.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from Romeo.utils.decorators.language import language, languageCB
-from Romeo.utils.inline import queue_back_markup, queue_markup
+from BWFMUSIC.utils.decorators.language import language, languageCB
+from BWFMUSIC.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -208,7 +208,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "📌" in msg:
             msg = msg.replace("📌", "")
-        link = await Romeobin(msg)
+        link = await BWFMUSICbin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )

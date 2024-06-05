@@ -8,8 +8,8 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from Romeo.utils.database import is_on_off
-from Romeo.utils.formatters import time_to_seconds
+from BWFMUSIC.utils.database import is_on_off
+from BWFMUSIC.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):

@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from helper import get_command
-from Romeo import app
-from Romeo.utils.database import set_cmode
-from Romeo.utils.decorators.admins import AdminActual
+from BWFMUSIC import app
+from BWFMUSIC.utils.database import set_cmode
+from BWFMUSIC.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")

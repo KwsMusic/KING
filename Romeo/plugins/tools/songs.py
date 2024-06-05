@@ -11,10 +11,10 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
 from helper import get_command
-from Romeo import YouTube, app
-from Romeo.utils.decorators.language import language, languageCB
-from Romeo.utils.formatters import convert_bytes
-from Romeo.utils.inline.song import song_markup
+from BWFMUSIC import YouTube, app
+from BWFMUSIC.utils.decorators.language import language, languageCB
+from BWFMUSIC.utils.formatters import convert_bytes
+from BWFMUSIC.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")

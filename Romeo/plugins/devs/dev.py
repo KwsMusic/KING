@@ -11,8 +11,8 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from Romeo import app
-from Romeo.misc import SUDOERS
+from BWFMUSIC import app
+from BWFMUSIC.misc import SUDOERS
 
 
 async def aexec(code, client, message):
